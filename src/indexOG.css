@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+html,
+body, #root, #root > div {
+  width: 100%;
+  height: 100%;
+  /* font-family: 'Caprasimo', cursive; */
+}
+
+body {
+  /* background-color: red !important; */
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='850' preserveAspectRatio='none' viewBox='0 0 1440 850'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1152%26quot%3b)' fill='none'%3e%3cpath d='M228.677%2c948.038C293.735%2c946.607%2c353.709%2c914.199%2c387.26%2c858.441C421.923%2c800.835%2c429.53%2c728.552%2c395.708%2c670.448C362.069%2c612.659%2c295.523%2c584.319%2c228.677%2c586.006C164.806%2c587.618%2c108.984%2c624.027%2c75.636%2c678.525C40.571%2c735.829%2c24.358%2c807.275%2c57.531%2c865.694C91.036%2c924.699%2c160.839%2c949.53%2c228.677%2c948.038' fill='rgba(189%2c 190%2c 191%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1327.339%2c533.533C1377.609%2c534.457%2c1427.043%2c514.496%2c1453.901%2c471.993C1482.638%2c426.518%2c1487.173%2c368.745%2c1461.262%2c321.602C1434.428%2c272.779%2c1383.05%2c241.9%2c1327.339%2c241.722C1271.325%2c241.543%2c1217.998%2c271.165%2c1191.922%2c320.739C1167.359%2c367.437%2c1180.258%2c422.969%2c1208.586%2c467.484C1234.65%2c508.441%2c1278.8%2c532.641%2c1327.339%2c533.533' fill='rgba(189%2c 190%2c 191%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1264.89%2c324.745C1304.316%2c327.683%2c1347.719%2c317.216%2c1367.327%2c282.886C1386.828%2c248.743%2c1373.111%2c206.538%2c1350.958%2c174.052C1331.736%2c145.863%2c1299%2c131.904%2c1264.89%2c132.667C1232.199%2c133.398%2c1201.607%2c149.45%2c1185.243%2c177.76C1168.864%2c206.095%2c1170.282%2c240.588%2c1185.874%2c269.363C1202.298%2c299.672%2c1230.512%2c322.183%2c1264.89%2c324.745' fill='rgba(189%2c 190%2c 191%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1098.681%2c481.818C1121.128%2c480.755%2c1138.051%2c464.022%2c1149.413%2c444.634C1160.938%2c424.967%2c1169.573%2c400.722%2c1157.557%2c381.351C1145.935%2c362.614%2c1120.661%2c361.106%2c1098.681%2c362.846C1080.144%2c364.313%2c1064.535%2c374.224%2c1054.004%2c389.549C1041.421%2c407.859%2c1029.198%2c429.873%2c1038.88%2c449.869C1049.436%2c471.671%2c1074.485%2c482.964%2c1098.681%2c481.818' fill='rgba(189%2c 190%2c 191%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1520.032%2c1021.877C1597.304%2c1017.501%2c1642.037%2c942.321%2c1678.294%2c873.943C1711.514%2c811.293%2c1734.223%2c740.612%2c1702.907%2c676.988C1667.996%2c606.06%2c1598.993%2c548.577%2c1520.032%2c552.412C1445.402%2c556.037%2c1402.262%2c628.303%2c1365.537%2c693.373C1329.706%2c756.86%2c1296.321%2c827.85%2c1327.346%2c893.819C1362.523%2c968.616%2c1437.508%2c1026.551%2c1520.032%2c1021.877' fill='rgba(189%2c 190%2c 191%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M859.734%2c260.426C916.175%2c262.938%2c979.615%2c263.088%2c1011.665%2c216.562C1047.054%2c165.189%2c1043.626%2c94.647%2c1010.231%2c41.955C978.869%2c-7.529%2c918.271%2c-25.525%2c859.734%2c-23.162C805.638%2c-20.978%2c755.825%2c6.337%2c728.906%2c53.311C702.137%2c100.023%2c700.801%2c158.486%2c729.553%2c204.004C756.624%2c246.86%2c809.094%2c258.172%2c859.734%2c260.426' fill='rgba(189%2c 190%2c 191%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1332.761%2c1148.188C1411.006%2c1149.161%2c1478.066%2c1096.159%2c1515.498%2c1027.442C1551.272%2c961.769%2c1552.724%2c881.213%2c1512.548%2c818.138C1474.965%2c759.134%2c1402.692%2c742.464%2c1332.761%2c740.552C1258.195%2c738.514%2c1174.397%2c744.415%2c1135.104%2c807.821C1094.387%2c873.525%2c1118.914%2c956.149%2c1157.731%2c1022.992C1196.34%2c1089.477%2c1255.885%2c1147.232%2c1332.761%2c1148.188' fill='rgba(189%2c 190%2c 191%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M683.264%2c886.302C741.876%2c885.494%2c791.971%2c848.916%2c821.861%2c798.491C852.432%2c746.916%2c860.067%2c685.385%2c834.504%2c631.153C804.45%2c567.394%2c753.728%2c506.256%2c683.264%2c504.456C610.618%2c502.6%2c549.886%2c557.758%2c518.019%2c623.068C489.75%2c681.003%2c503.609%2c747.809%2c537.883%2c802.407C569.766%2c853.196%2c623.303%2c887.129%2c683.264%2c886.302' fill='rgba(189%2c 190%2c 191%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1241.816%2c851.264C1282.987%2c852.518%2c1329.109%2c847.722%2c1350.379%2c812.449C1372.112%2c776.408%2c1356.155%2c732.348%2c1335.704%2c695.564C1314.471%2c657.375%2c1285.511%2c617.034%2c1241.816%2c617.184C1198.276%2c617.333%2c1169.028%2c657.525%2c1149.035%2c696.203C1130.977%2c731.138%2c1123.937%2c772.424%2c1144.129%2c806.17C1163.866%2c839.155%2c1203.395%2c850.094%2c1241.816%2c851.264' fill='rgba(189%2c 190%2c 191%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1152'%3e%3crect width='1440' height='850' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+
+/* .container {
+  height: 100vh important;
+} */
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+/* .borderless {
+  border: none !important;
+  padding: 0px !important;
+} */
+
+.create-link-input > input {
+  outline: none;
+  border-width: 0 0 2px;
+  border-color: white;
+}
+
+.create-link-input > input:focus {
+  border-color: lightblue;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#footer {
+  position: fixed;
+  /* relative */
+  bottom: 0%;
+  right: 1%;
+  padding: 1%;
+  text-align: right;
+  font-size: 0.9rem;
+  background-image: none;
+}
+
+table {
+  border: none;
+  outline: none;
+}
+
+td, th {
+  border: none !important;
+  outline: none !important;
+}
+
+button {
+  z-index: 10;
+}
+
+.form-label {
+  float: left;
+}
+
+/* tr {
+  line-height: 100px;
+} */
