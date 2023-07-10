@@ -27,7 +27,10 @@ const CreateLink = (props) => {
     e.preventDefault();
 
     axios
-      .post('http://localhost:8082/api/links', link)
+      .post('https://mern-link-shortener-backend.vercel.app/api/links', link)
+      // .post('http://localhost:8082/api/links', link)
+
+
       .then((res) => {
         setLink({
           originalUrl: '',

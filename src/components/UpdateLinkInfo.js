@@ -22,7 +22,9 @@ function UpdateLinkInfo(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8082/api/links/show/${id}`)
+      .get(`https://mern-link-shortener-backend.vercel.app/api/links/show/${id}`)
+      // .get(`http://localhost:8082/api/links/show/${id}`)
+
       // .get(`http://localhost:8082/api/books/${id}`) -> same as showbookdetails - so no conflict with test.js (the localhost:3000/:urlId to redirect
       .then((res) => {
         setLink({
@@ -50,7 +52,9 @@ function UpdateLinkInfo(props) {
     };
 
     axios
-      .put(`http://localhost:8082/api/links/${id}`, data)
+      .put(`https://mern-link-shortener-backend.vercel.app/api/links/${id}`, data)
+     // .put(`http://localhost:8082/api/links/${id}`, data)
+
       .then((res) => {
         navigate(`/show-link/${id}`);
       })
