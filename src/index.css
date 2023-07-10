@@ -47,12 +47,14 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   outline: none;
   border-width: 0 0 2px;
   border-color: white;
+  background: transparent;
 }
 
 .create-link-input > input:focus {
   border-color: lightblue;
   -webkit-box-shadow: none;
   box-shadow: none;
+  background: transparent;
 }
 
 #footer {
