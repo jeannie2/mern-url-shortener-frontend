@@ -11,8 +11,8 @@ function ShowLinkDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`https://mern-link-shortener-backend.vercel.app/api/links/show/${id}`)
-      //.get(`http://localhost:8082/api/links/show/${id}`)
+      // .get(`https://mern-link-shortener-backend.vercel.app/api/links/show/${id}`)
+      .get(`http://localhost:8082/api/links/show/${id}`)
 
        // .get(`http://localhost:8082/api/books/${id}`) -> so no conflict with test.js (the localhost:3000/:urlId to redirect
       .then((res) => {

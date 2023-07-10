@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import ErrorComp from './ErrorComp'
@@ -27,8 +27,8 @@ const CreateLink = (props) => {
     e.preventDefault();
 
     axios
-      .post('https://mern-link-shortener-backend.vercel.app/api/links', link)
-      // .post('http://localhost:8082/api/links', link)
+      // .post('https://mern-link-shortener-backend.vercel.app/api/links', link)
+      .post('http://localhost:8082/api/links', link)
 
 
       .then((res) => {

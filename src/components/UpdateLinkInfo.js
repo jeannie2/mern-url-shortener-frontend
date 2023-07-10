@@ -52,8 +52,8 @@ function UpdateLinkInfo(props) {
     };
 
     axios
-      .put(`https://mern-link-shortener-backend.vercel.app/api/links/${id}`, data)
-     // .put(`http://localhost:8082/api/links/${id}`, data)
+      // .put(`https://mern-link-shortener-backend.vercel.app/api/links/${id}`, data)
+     .put(`http://localhost:8082/api/links/${id}`, data)
 
       .then((res) => {
         navigate(`/show-link/${id}`);
