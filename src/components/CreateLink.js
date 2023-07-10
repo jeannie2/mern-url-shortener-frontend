@@ -28,8 +28,8 @@ const CreateLink = (props) => {
 
     axios
       // .post('https://mern-link-shortener-backend.vercel.app/api/links', link)
-      .post('http://localhost:8082/api/links', link)
-
+      // .post('http://localhost:8082/api/links', link)
+      .post('https://mern-link-shortener-backend-production.up.railway.app/api/links', link)
 
       .then((res) => {
         setLink({
