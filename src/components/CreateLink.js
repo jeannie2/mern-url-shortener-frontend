@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 import ErrorComp from './ErrorComp'
-import Logo from './Logo';
+import Logo from './Logo'
 
 const CreateLink = (props) => {
   // console.log("props: " + props.originalUrl)
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   const [link, setLink] = useState({
     originalUrl: '',
-    shortUrl: '', // added. need?
-    urlId: '' // added. need?
+    shortUrl: '', // need?
+    urlId: '' // need?
   });
 
   const [error, setError] = useState({
@@ -20,32 +19,30 @@ const CreateLink = (props) => {
   })
 
   const onChange = (e) => {
-    setLink({ ...link, [e.target.name]: e.target.value });
+    setLink({ ...link, [e.target.name]: e.target.value })
   };
 
   const onSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     axios
-      // .post('https://mern-link-shortener-backend.vercel.app/api/links', link)
       // .post('http://localhost:8082/api/links', link)
       .post('https://mern-link-shortener-backend-production.up.railway.app/api/links', link)
 
       .then((res) => {
         setLink({
           originalUrl: '',
-          shortUrl: '', // added. need?
-          urlId: '' // added. need?
-        });
+          shortUrl: '', // need?
+          urlId: '' // need?
+        })
 
         // const id = book._id.valueOf();
         console.log(res.data.id)
-        navigate(`/show-link/${res.data.id}`);
+        navigate(`/show-link/${res.data.id}`)
       })
       .catch((err) => {
-        // alert(err.response.data) // console.log(err.response.data.msg) - from update link info
         console.log(err.response.data) // not: err.response.data.msg
-        console.log('Error in CreateLink!');
+        console.log('Error in CreateLink!')
 
         setError( {
           errorStatus: true,
@@ -89,4 +86,4 @@ const CreateLink = (props) => {
   );
 };
 
-export default CreateLink;
+export default CreateLink
