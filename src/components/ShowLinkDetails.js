@@ -26,21 +26,21 @@ function ShowLinkDetails(props) {
   const LinkItem = (
     <div className="h-100">
       <table className='table'>
-        <tbody className='bg-transparent'>
+        <tbody>
           <tr>
-            <td className="fw-bold bg-transparent">Original url: </td>
+            <th>Original url: </th>
             <td>{link.originalUrl}</td>
           </tr>
 
           <tr>
-            <td className="fw-bold bg-transparent">short url: </td>
+            <th>short url: </th>
             {/* <td>{link.shortUrl}</td> */}
             <CopyToClipboard copyText={link.shortUrl} ></CopyToClipboard>
           </tr>
 
             <tr>
             {/* delete below when finish */}
-            <td className="fw-bold bg-transparent">url id:</td>
+            <th>url id:</th>
             <td>{link.urlId}</td>
           </tr>
 
@@ -58,16 +58,16 @@ function ShowLinkDetails(props) {
           <div className='col-md-8 m-auto align-items-center'>
             {LinkItem}
             <div className='col-md-6 mx-auto text-center'>
-             <Link
+              <Link
                 to={`/`}
-                className='btn btn-outline-secondary btn-block mx-5'
+                className='btn btn-outline-secondary btn-block mx-auto mr-2'
               >
               Shorten new link
               </Link>
 
               <Link
                 to={`/edit-link/${link._id}`}
-                className='btn btn-outline-secondary btn-block'
+                className='btn btn-outline-secondary btn-block mx-auto'
               >
               Custom back half
               </Link>
