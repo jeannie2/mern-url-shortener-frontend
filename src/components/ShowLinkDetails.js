@@ -60,7 +60,7 @@ function ShowLinkDetails(props) {
             <div className='col-md-6 mx-auto text-center'>
               <Link
                 to={`/`}
-                className='btn btn-outline-light btn-block mx-auto'
+                className='btn btn-outline-light btn-block mx-2'
                 id='shorten-button'
               >
               Shorten new link

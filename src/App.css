@@ -69,9 +69,9 @@ button {
   z-index: 10;
 }
 
-#shorten-button {
+/* #shorten-button {
   margin-right: 30px !important;
-}
+} */
 
 .form-label {
   float: left;
