@@ -28,19 +28,19 @@ function ShowLinkDetails(props) {
       <table className='table'>
         <tbody>
           <tr>
-            <td className="fw-bold">Original url: </td>
+            <td className="fw-bold bg-transparent">Original url: </td>
             <td>{link.originalUrl}</td>
           </tr>
 
           <tr>
-            <td className="fw-bold">short url: </td>
+            <td className="fw-bold bg-transparent">short url: </td>
             {/* <td>{link.shortUrl}</td> */}
             <CopyToClipboard copyText={link.shortUrl} ></CopyToClipboard>
           </tr>
 
             <tr>
             {/* delete below when finish */}
-            <td className="fw-bold">url id:</td>
+            <td className="fw-bold bg-transparent">url id:</td>
             <td>{link.urlId}</td>
           </tr>
 
@@ -51,13 +51,20 @@ function ShowLinkDetails(props) {
 
   return (
     <>
-    <Logo />
+    {/* <Logo /> */}
     <div className='show-link-details h-100'>
       <div className='container h-100'>
         <div className='row h-100'>
           <div className='col-md-8 m-auto align-items-center'>
             {LinkItem}
             <div className='col-md-6 mx-auto text-center'>
+             <Link
+                to={`/`}
+                className='btn btn-outline-secondary btn-block mx-auto'
+              >
+              Shorten new link
+              </Link>
+
               <Link
                 to={`/edit-link/${link._id}`}
                 className='btn btn-outline-secondary btn-block mx-auto'

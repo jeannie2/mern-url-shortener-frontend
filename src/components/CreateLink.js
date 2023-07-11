@@ -53,7 +53,7 @@ const CreateLink = (props) => {
 
   return (
     <>
-    <Logo />
+    {/* <Logo /> */}
     <div className='create-link h-100'>
       <div className='container h-100'>
         <div className='row h-100'>
@@ -66,7 +66,7 @@ const CreateLink = (props) => {
                   type='url'
                   placeholder='Paste your full link here e.g. https://www.google.com'
                   name='originalUrl'
-                  className='form-control w-75 mx-auto'
+                  className='form-control w-75 mx-auto bg-transparent'
                   value={link.originalUrl}
                   onChange={onChange}
                   // onChange={(e) => validate(e.target.value)}

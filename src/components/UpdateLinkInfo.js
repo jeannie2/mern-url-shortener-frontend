@@ -70,7 +70,7 @@ function UpdateLinkInfo(props) {
 
   return (
     <>
-    <Logo />
+    {/* <Logo /> */}
     <div className='update-link-info h-100'>
       <div className='container h-100'>
         <div className='row h-100'>
