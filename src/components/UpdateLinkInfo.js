@@ -76,14 +76,14 @@ function UpdateLinkInfo(props) {
         <div className='row h-100'>
           <div className='col-md-8 m-auto align-items-center'>
             { error.errorStatus ? <ErrorComp error={error.errorMessage}/> : null }
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} className='form-inline'>
               <div className='form-group'>
                 <label className='form-label mt-2'>https://mern-url-shortener-frontend-production.up.railway.app/</label>
                 <input
                   type='text' // url
                   placeholder={link.urlId}
                   name='urlId'
-                  className='form-control w-50 mx-auto'
+                  className='form-control w-25 mx-auto'
                   value={link.urlId}
                   onChange={onChange}
                 />
@@ -91,7 +91,7 @@ function UpdateLinkInfo(props) {
 
               <div className='text-center mt-3'>
 
-                <Link to={`/show-link/${id}`} className='btn btn-outline-primary float-left my-2 mx-2'>
+                <Link to={`/show-link/${id}`} className='btn btn-outline-secondary float-left my-2 mx-5'>
                   My link details
                 </Link>
                 <button
