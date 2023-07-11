@@ -28,19 +28,19 @@ function ShowLinkDetails(props) {
       <table className='table'>
         <tbody>
           <tr>
-            <th className='text-right fw-bold'>Original url: </th>
+            <th className='fw-bold'>Original url: </th>
             <td>{link.originalUrl}</td>
           </tr>
 
           <tr>
-            <th className='text-right fw-bold'>short url: </th>
+            <th className='fw-bold'>short url: </th>
             {/* <td>{link.shortUrl}</td> */}
             <CopyToClipboard copyText={link.shortUrl} ></CopyToClipboard>
           </tr>
 
             <tr>
             {/* delete below when finish */}
-            <th className='text-right fw-bold'>url id:</th>
+            <th className='fw-bold'>url id:</th>
             <td>{link.urlId}</td>
           </tr>
 
@@ -60,7 +60,8 @@ function ShowLinkDetails(props) {
             <div className='col-md-6 mx-auto text-center'>
               <Link
                 to={`/`}
-                className='btn btn-outline-light btn-block mx-auto mr-25'
+                className='btn btn-outline-light btn-block mx-auto'
+                id='shorten-button'
               >
               Shorten new link
               </Link>
