@@ -91,7 +91,7 @@ function UpdateLinkInfo(props) {
 
               <div className='text-center mt-3'>
 
-                <Link to={`/show-link/${id}`} className='btn btn-outline-secondary float-left my-2 mx-5'>
+                <Link to={`/show-link/${id}`} className='btn btn-outline-secondary float-left my-2 mx-2'>
                   My link details
                 </Link>
                 <button
