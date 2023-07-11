@@ -35,7 +35,9 @@ function ShowLinkDetails(props) {
           <tr>
             <th className='fw-bold'>short url: </th>
             {/* <td>{link.shortUrl}</td> */}
+            <td>
             <CopyToClipboard copyText={link.shortUrl} ></CopyToClipboard>
+            </td>
           </tr>
 
             <tr>
