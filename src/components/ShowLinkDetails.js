@@ -28,19 +28,19 @@ function ShowLinkDetails(props) {
       <table className='table'>
         <tbody>
           <tr>
-            <th>Original url: </th>
+            <th className='text-right fw-bold'>Original url: </th>
             <td>{link.originalUrl}</td>
           </tr>
 
           <tr>
-            <th>short url: </th>
+            <th className='text-right fw-bold'>short url: </th>
             {/* <td>{link.shortUrl}</td> */}
             <CopyToClipboard copyText={link.shortUrl} ></CopyToClipboard>
           </tr>
 
             <tr>
             {/* delete below when finish */}
-            <th>url id:</th>
+            <th className='text-right fw-bold'>url id:</th>
             <td>{link.urlId}</td>
           </tr>
 
