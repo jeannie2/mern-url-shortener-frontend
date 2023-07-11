@@ -24,7 +24,7 @@ const CopyToClipboard = ({copyText}) => {
 return (
   <>
   <input type="text" value={copyText} readOnly className="border-0 w-75"/>
-  <button type="button" className="btn btn-outline-secondary" onClick={handleCopy}>
+  <button type="button" className="btn btn-outline-light" onClick={handleCopy}>
   <span>{isCopied ? 'Copied' : 'Copy'}</span>
   </button>
   </>

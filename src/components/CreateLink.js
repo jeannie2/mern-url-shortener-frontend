@@ -75,7 +75,7 @@ const CreateLink = (props) => {
 
               <input
                 type='submit'
-                className='btn btn-outline-secondary btn-lg mt-4 mx-auto d-block'
+                className='btn btn-outline-light btn-lg mt-4 mx-auto d-block'
               />
             </form>
           </div>
