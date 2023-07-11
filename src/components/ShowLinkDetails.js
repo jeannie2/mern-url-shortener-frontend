@@ -28,12 +28,12 @@ function ShowLinkDetails(props) {
       <table className='table'>
         <tbody>
           <tr>
-            <th className='fw-bold'>Original url: </th>
+            <th className='fw-bold'>ORIGINAL LINK: </th>
             <td>{link.originalUrl}</td>
           </tr>
 
           <tr>
-            <th className='fw-bold'>short url: </th>
+            <th className='fw-bold'>SHORTENED LINK: </th>
             {/* <td>{link.shortUrl}</td> */}
             <td>
             <CopyToClipboard copyText={link.shortUrl} ></CopyToClipboard>
