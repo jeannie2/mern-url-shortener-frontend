@@ -52,6 +52,20 @@ button {
   background: transparent;
 }
 
+input {
+  outline: none;
+    border-width: 0 0 2px;
+    border-color: white;
+    background: transparent;
+}
+
+input:focus {
+  border-color: lightblue;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+}
+
 #footer {
   position: fixed;
   /* relative */
