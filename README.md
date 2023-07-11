@@ -8,6 +8,4 @@ This project was made using MongoDB, Mongoose, React, Express,
 
 ## How to use
 
-View deployed app on Railway:
-
-## Sources
+View deployed app on Railway: https://mern-url-shortener-frontend-production.up.railway.app
