@@ -26,7 +26,7 @@ function ShowLinkDetails(props) {
   const LinkItem = (
     <div className="h-100">
       <table className='table'>
-        <tbody>
+        <tbody className='bg-transparent'>
           <tr>
             <td className="fw-bold bg-transparent">Original url: </td>
             <td>{link.originalUrl}</td>
