@@ -3,7 +3,7 @@ import { Link, useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import '../App.css'
 import ErrorComp from './ErrorComp'
-import Logo from './Logo'
+// import Logo from './Logo'
 
 function UpdateLinkInfo(props) {
   const [link, setLink] = useState({

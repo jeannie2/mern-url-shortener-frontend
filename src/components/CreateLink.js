@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import ErrorComp from './ErrorComp'
-import Logo from './Logo'
+// import Logo from './Logo'
 
 const CreateLink = (props) => {
   // console.log("props: " + props.originalUrl)

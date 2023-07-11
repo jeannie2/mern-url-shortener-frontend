@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import '../App.css'
 import axios from 'axios'
 import CopyToClipboard from "./CopyToClipboard"
-import Logo from './Logo'
+// import Logo from './Logo'
 
 function ShowLinkDetails(props) {
   const [link, setLink] = useState({})
