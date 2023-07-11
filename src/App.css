@@ -55,6 +55,10 @@ td, th {
   outline: none !important;
 }
 
+td {
+  text-align: center;
+}
+
 /* tr {
   background: transparent
 } */
