@@ -61,6 +61,10 @@ td, th {
   outline: none !important;
 }
 
+th {
+  text-align: right;
+}
+
 /* td {
   text-align: center;
 } */
