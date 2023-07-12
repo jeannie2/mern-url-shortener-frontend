@@ -3,6 +3,10 @@ import React, { useState } from 'react'
 const CopyToClipboard = ({copyText}) => {
   // console.log(copyText.data)
   const [isCopied, setIsCopied] = useState(false)
+  // const clipboardSymbol = String.fromCodePoint(U+1F4CB);
+
+  // (`${smileyEmoji} Hello World!`);
+
 
   async function copyToClipboard(text) {
     return await navigator.clipboard.writeText(text)
@@ -25,7 +29,7 @@ return (
   <>
   <input type="text" value={copyText} readOnly className="border-0 w-75 bg-transparent"/>
   <button type="button" className="btn btn-light" onClick={handleCopy}>
-  <span>{isCopied ? 'Copied' : 'Copy'}</span>
+  <span>{isCopied ? 'U+1F4CB Copied' : 'U+1F4CB Copy'}</span>
   </button>
   </>
 )
