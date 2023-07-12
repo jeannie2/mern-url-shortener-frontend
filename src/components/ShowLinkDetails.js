@@ -64,7 +64,7 @@ function ShowLinkDetails(props) {
 
               <Link
                 to={`/edit-link/${link._id}`}
-                className='btn btn-outline-light mt-2 mx-auto'
+                className='btn btn-outline-light mt-1 mx-auto'
               >
               Custom back half
               </Link>
