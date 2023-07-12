@@ -78,7 +78,7 @@ function UpdateLinkInfo(props) {
             { error.errorStatus ? <ErrorComp error={error.errorMessage}/> : null }
             <form onSubmit={onSubmit} className='form-inline'>
               <div className='form-group'>
-                <label className='form-label mt-2'>https://mern-url-shortener-frontend-production.up.railway.app/</label>
+                <label className='form-label mt-2'>s5n.co/</label>
                 <input
                   type='text' // url
                   placeholder={link.urlId}
