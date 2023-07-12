@@ -83,7 +83,7 @@ function UpdateLinkInfo(props) {
                   type='text' // url
                   placeholder={link.urlId}
                   name='urlId'
-                  className='form-control w-25 mx-auto'
+                  className='form-control w-25'
                   value={link.urlId}
                   onChange={onChange}
                 />
