@@ -38,7 +38,7 @@ button {
   float: left;
   margin-left: 40% !important;
 }
-
+/*
 .create-link-input>input {
   outline: none;
   border-width: 0 0 2px;
@@ -51,20 +51,20 @@ button {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: transparent;
-}
+} */
 
 input {
-  outline: none;
-    border-width: 0 0 2px;
-    border-color: white;
-    background: transparent;
+  outline: none !important;
+  border-width: 0 0 2px !important;
+  border-color: white !important;
+  background: transparent !important;
 }
 
 input:focus {
-  border-color: lightblue;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background: transparent;
+  border-color: lightblue !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
 }
 
 #footer {
