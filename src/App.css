@@ -77,3 +77,7 @@ input:focus {
   font-size: 0.9rem;
   background-image: none;
 }
+
+.custom-back-half-button {
+  margin-left: -30px;
+}
