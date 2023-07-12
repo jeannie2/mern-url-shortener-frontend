@@ -53,14 +53,14 @@ button {
   background: transparent;
 } */
 
-input {
+input[type=text] {
   outline: none !important;
   border-width: 0 0 2px !important;
   border-color: white !important;
   background: transparent !important;
 }
 
-input:focus {
+input[type=text]:focus {
   border-color: lightblue !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
