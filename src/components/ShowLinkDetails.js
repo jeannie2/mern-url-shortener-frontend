@@ -40,12 +40,6 @@ function ShowLinkDetails(props) {
             </td>
           </tr>
 
-            <tr>
-            {/* delete below when finish */}
-            <th className='fw-bold'>url id:</th>
-            <td>{link.urlId}</td>
-          </tr>
-
         </tbody>
       </table>
     </div>

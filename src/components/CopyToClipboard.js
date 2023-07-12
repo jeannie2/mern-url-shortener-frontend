@@ -25,7 +25,7 @@ return (
   <>
   <input type="text" value={copyText} readOnly className="border-0 w-75 bg-transparent"/>
   <button type="button" className="btn btn-light copy-to-clipboard-button" onClick={handleCopy}>
-  <span>{isCopied ? 'Copied' : 'U+1F4CB Copy'}<i class="fa fa-clipboard"></i></span>
+  <span>{isCopied ? 'Copy' : 'Copied'} <i class="fa fa-clipboard"></i></span>
   </button>
   </>
 )
