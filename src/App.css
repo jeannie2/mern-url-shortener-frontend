@@ -79,5 +79,5 @@ input:focus {
 }
 
 .custom-back-half-button {
-  margin-left: -30px;
+  margin-left: -30px !important;
 }
