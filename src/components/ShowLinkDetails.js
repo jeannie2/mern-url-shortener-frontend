@@ -56,7 +56,7 @@ function ShowLinkDetails(props) {
             <div className='col-md-6 mx-auto text-center'>
               <Link
                 to={`/`}
-                className='btn btn-outline-light float-left btn-block mx-2'
+                className='btn btn-outline-light mx-2'
                 id='shorten-button'
               >
               Shorten new link
@@ -64,7 +64,7 @@ function ShowLinkDetails(props) {
 
               <Link
                 to={`/edit-link/${link._id}`}
-                className='btn btn-outline-light btn-block mx-auto'
+                className='btn btn-outline-light mx-auto'
               >
               Custom back half
               </Link>
