@@ -57,7 +57,6 @@ function ShowLinkDetails(props) {
               <Link
                 to={`/`}
                 className='btn btn-outline-light mt-1 mx-2'
-                id='shorten-button'
               >
               Shorten new link
               </Link>
