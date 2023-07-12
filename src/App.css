@@ -38,7 +38,7 @@ button {
   float: left;
   margin-left: 40% !important;
 }
-/*
+
 .create-link-input>input {
   outline: none;
   border-width: 0 0 2px;
@@ -46,6 +46,7 @@ button {
   background: transparent;
 }
 
+/*
 .create-link-input>input:focus {
   border-color: lightblue;
   -webkit-box-shadow: none;
