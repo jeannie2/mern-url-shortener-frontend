@@ -36,6 +36,7 @@ button {
 
 .form-label {
   float: left;
+  margin-right: -30px;
 }
 
 .create-link-input>input {
@@ -76,14 +77,3 @@ input:focus {
   font-size: 0.9rem;
   background-image: none;
 }
-
-
-/*
-#main-text {
-  font-family: 'Caprasimo', cursive;
-  // text-align: center;
-  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
-    #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
-  color: lavender;
-  margin: 1%;
-} */

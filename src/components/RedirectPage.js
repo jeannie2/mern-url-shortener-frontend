@@ -7,7 +7,8 @@ function RedirectPage() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8082/api/links/${urlId}`)  //  .get(`http://localhost:8082/api/books/${urlId}`) .get('http://localhost:8082/api/books/test')
+      .get(`https://mern-link-shortener-backend-production.up.railway.app/api/links/${urlId}`)
+      // .get(`http://localhost:8082/api/links/${urlId}`)  //  .get(`http://localhost:8082/api/books/${urlId}`) .get('http://localhost:8082/api/books/test')
       .then((res) => {
         console.log("res.data.originalUrl " + res.data.originalUrl)
         window.location.href = res.data.originalUrl
