@@ -36,7 +36,7 @@ button {
 
 .form-label {
   float: left;
-  margin-right: -100px !important;
+  margin-left: 40% !important;
 }
 
 .create-link-input>input {
